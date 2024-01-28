@@ -1,0 +1,88 @@
+.header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgb(3, 3, 75);
+    padding-left: 70px;
+}
+.header-links{
+    padding-top: 10px;
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    color: #fdfafa;
+    font-size:18px;
+}
+.header-links li{
+    cursor: pointer;
+}
+.header-login{
+    display: flex;
+    margin-left: 20%;
+    gap: 10px;
+}
+
+.header-login button{
+    width: 65px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: #515151;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: white;
+    cursor: pointer;
+}
+.header-login button:active{
+    background-color: #7a7a7a;
+}
+
+@media screen and (max-width:1084px) {
+    .header-links{
+        padding-left: 0px;
+        font-size: 14px;
+        gap: 20px;
+    }
+    .header-login{
+        margin-left:28%;
+    }
+    
+    .header-login button{
+        width: 65px;
+        height: 30px;
+    }
+}
+@media screen and (max-width:800px) {
+    .header-links{
+        padding-left: 0px;
+        font-size: 10px;
+        gap: 20px;
+    }
+    .header-login{
+        margin-left:28%;
+    }
+    
+    .header-login button{
+        width: 50px;
+        height: 20px;
+        font-size: 11px;
+    }
+}
+@media screen and (max-width:500px) {
+    .header-links{
+        padding-left: 0px;
+        font-size: 8px;
+        gap: 10px;
+
+    }
+    .header-login{
+        margin-left:20px;
+    }
+    
+    .header-login button{
+        width: 40px;
+        height: 15px;
+        font-size: 10px;
+    }
+}
